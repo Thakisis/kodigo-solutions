@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "home": "Home",
+    "branding": "Branding",
+    "collateral": "Collateral",
+    "packaging": "Packaging",
+    "inventions": "Inventions",
+    "games": "Games",
+    "screenplays": "Screenplays"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}
