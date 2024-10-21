@@ -1,10 +1,12 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
+import dynamic from 'next/dynamic';
 import { Inter as FontSans } from 'next/font/google';
 
-import { Canvas } from '@/3d/Canvas';
 import { NavBar } from '@/components/nav-bar';
 import { routing } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
+
+const Canvas = dynamic(() => import('@/components/3d/'), { ssr: false });
 
 const fontSans = FontSans({
   subsets: ['latin'],

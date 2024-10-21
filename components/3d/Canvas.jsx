@@ -7,7 +7,7 @@ import Effects from './effects';
 import Environment from './environment';
 import Rig from './rig-camera';
 
-export function Canvas() {
+export default function Canvas() {
   return (
     <Canvas3d
       shadows
