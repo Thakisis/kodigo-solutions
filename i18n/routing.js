@@ -2,11 +2,37 @@ import { createSharedPathnamesNavigation } from 'next-intl/navigation';
 import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
   locales: ['en', 'es'],
-
-  // Used when no locale matches
   defaultLocale: 'en',
+  localePrefix: 'as-needed',
+  pathnames: {
+    '/': '/',
+    '/branding': {
+      en: '/branding',
+      es: '/marcas',
+    },
+    '/collateral': {
+      en: '/collateral',
+      es: '/colaterales',
+    },
+    '/packaging': {
+      en: '/packaging',
+      es: '/embalajes', // Cambiado a "embalajes"
+    },
+    '/inventions': {
+      en: '/inventions',
+      es: '/invenciones',
+    },
+    '/games': {
+      en: '/games',
+      es: '/juegos',
+    },
+    '/screenplays': {
+      en: '/screenplays',
+      es: '/guiones',
+    },
+    '/redirect': '/redirect',
+  },
 });
 
 // Lightweight wrappers around Next.js' navigation APIs
