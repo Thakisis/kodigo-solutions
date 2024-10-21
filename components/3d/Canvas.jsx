@@ -1,6 +1,8 @@
 'use client';
 
+import { MeshTransmissionMaterial } from '@react-three/drei';
 import { Canvas as Canvas3d, useFrame } from '@react-three/fiber';
+import { SphereGeometry } from 'three';
 
 import TextPlane from './Text';
 import Effects from './effects';
@@ -21,6 +23,18 @@ export default function Canvas() {
       <Environment />
       <TextPlane />
       <Rig />
+      <Knot />
     </Canvas3d>
   );
 }
+
+const Knot = (props) => (
+  <mesh receiveShadow castShadow {...props}>
+    <sphereGeometry args={[5, 64, 64]} />
+    <MeshTransmissionMaterial
+      transmission={1}
+      thickness={3}
+      chromaticAberration={0.2}
+    />
+  </mesh>
+);

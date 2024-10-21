@@ -13,6 +13,7 @@ export default function LanguageLink({ locale, langName, selected }) {
     <Link
       href={pathname}
       locale={locale}
+      scroll={false}
       className={`px-3 py-3 flex  ${selected && 'bg-gray-800'} text-sm items-center hover:bg-gray-800 no-underline hover:no-underline transition-colors duration-100`}
     >
       <div
