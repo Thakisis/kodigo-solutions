@@ -32,6 +32,7 @@ export function Key(props) {
           color="#C0C0C0" // Color plateado en hexadecimal
           metalness={1} // Alto valor de metalness para apariencia metálica
           roughness={0.08} // Muy baja rugosidad para reflejos brillantes
+          side={2}
         />
       </mesh>
       <group position={[0.656, -0.28, 4.763]} scale={0.01}>
