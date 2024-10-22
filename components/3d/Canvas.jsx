@@ -2,11 +2,12 @@
 
 import { MeshTransmissionMaterial } from '@react-three/drei';
 import { Canvas as Canvas3d, useFrame } from '@react-three/fiber';
-import { SphereGeometry } from 'three';
 
 import TextPlane from './Text';
 import Effects from './effects';
 import Environment from './environment';
+import { Key } from './models/Key';
+import { Keylock } from './models/KeyLock';
 import Rig from './rig-camera';
 
 export default function Canvas() {
@@ -23,7 +24,8 @@ export default function Canvas() {
       <Environment />
       <TextPlane />
       <Rig />
-      <Knot />
+      <Keylock />
+      <Key />
     </Canvas3d>
   );
 }

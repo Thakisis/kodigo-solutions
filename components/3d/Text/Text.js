@@ -15,9 +15,6 @@ export default function TextPlane(props) {
       {...props}
     >
       {text}
-      <Html style={{ color: 'transparent', fontSize: '33.5em' }} transform>
-        {text}
-      </Html>
     </Text>
   );
 }
